@@ -1,0 +1,65 @@
+@import "base/variables";
+body {
+   height: 100%;
+   font-family: Roboto;
+   color: $main_grey;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+.container {
+   max-width: 1380px;
+   margin: 0 auto;
+}
+.title {
+   font-family: "Yellowtail";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 65px;
+   letter-spacing: 0.36px;
+   text-transform: capitalize;
+   color: #7eb693;
+}
+.subtitle {
+   letter-spacing: 0.36px;
+}
+.button {
+   position: relative;
+   width: 219px;
+   height: 82px;
+   background: #efd372;
+   border: 1px solid #efd372;
+   border-radius: 16px;
+   span {
+      position: absolute;
+      top: 30px;
+      left: 33px;
+      font-size: 19px;
+   }
+   img {
+      position: absolute;
+      top: 24px;
+      right: 5px;
+      padding: 11px;
+      background-color: #335b6b;
+      border-radius: 50%;
+      margin-right: 9px;
+   }
+}
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/invitation";
+@import "blocks/about";
+@import "blocks/catalog";
+@import "blocks/testimonials";
+@import "blocks/offer";
+@import "blocks/organic";
+@import "blocks/variation";
+@import "blocks/news";
+@import "blocks/newsletter";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "base/media";

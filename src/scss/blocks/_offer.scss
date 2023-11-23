@@ -1,0 +1,29 @@
+.offer {
+   min-height: 1060px;
+   background-color: $main_grey;
+   &__all {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 139px;
+      margin-bottom: 44px;
+   }
+
+   &__subtitle {
+      color: #fff;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 58px;
+   }
+
+   &__link {
+      width: 267px;
+      text-transform: capitalize;
+      color: $main_grey;
+      align-self: flex-end;
+   }
+
+   &__items {
+      display: flex;
+      gap: 20px;
+   }
+}

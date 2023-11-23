@@ -1,0 +1,31 @@
+.invitation {
+   min-height: 658px;
+   &__row {
+      padding: 140px 0;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item {
+      max-width: 665px;
+      position: relative;
+   }
+   &__info {
+      position: absolute;
+      top: 105px;
+      left: 55px;
+      max-width: 265px;
+      &_white {
+         span {
+            color: #fff;
+         }
+      }
+   }
+
+   &__title {
+   }
+   &__subtitle {
+      font-size: 40px;
+      line-height: 52px;
+   }
+}

@@ -1,0 +1,36 @@
+.variation {
+   min-height: 860px;
+   padding: 140px 0;
+   background: #eff6f1;
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1440px;
+      margin: auto;
+   }
+
+   &__card {
+      position: relative;
+      img {
+         max-height: 580px;
+         object-fit: contain;
+      }
+   }
+
+   &__name {
+      position: absolute;
+      top: 243px;
+      left: 90px;
+      width: 281px;
+      height: 95px;
+      border-radius: 20px;
+      background: #ffffff;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 35px;
+      text-align: center;
+      padding-top: 30px;
+   }
+}
+.container {
+}

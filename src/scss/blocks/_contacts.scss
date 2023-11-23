@@ -1,0 +1,132 @@
+.contacts {
+   min-height: 630px;
+   margin: 50px 0 19px;
+   padding: 132px 0 128px;
+   a {
+      color: $main_grey;
+   }
+   &__row {
+      display: flex;
+      // min-height: 369px;
+      &:nth-child(2) {
+         min-width: 670px;
+      }
+   }
+
+   &__section {
+      min-width: 354px;
+      display: flex;
+   }
+
+   &__subheader {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 42px;
+   }
+}
+.container {
+}
+.contact {
+   flex: 0 1 354px;
+   position: relative;
+   &::after {
+      content: "";
+      height: 100%;
+      width: 1px;
+      background: #d5d5d5;
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+   &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      margin-right: 20px;
+      .contact-us {
+         margin-bottom: 35px;
+      }
+   }
+
+   &__content {
+      margin-bottom: 40px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+   }
+   &__subheader {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 5px;
+   }
+}
+.subheader {
+}
+.socials {
+   flex: 0 1 670px;
+   margin: 0 15px;
+   &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+   }
+   &__subheader {
+      margin-bottom: 44px;
+   }
+   &__desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      max-width: 500px;
+      text-align: center;
+      margin-bottom: 60px;
+   }
+
+   &__row {
+      display: flex;
+      gap: 20px;
+      span {
+         display: block;
+         width: 60px;
+         height: 60px;
+         background: #eff6f1;
+         border-radius: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}
+.utility {
+   flex: 0 1 354px;
+   position: relative;
+   &::before {
+      content: "";
+      height: 100%;
+      width: 1px;
+      background: #d5d5d5;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+   &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-left: 20px;
+   }
+   &__subheader {
+      margin-bottom: 20px;
+   }
+   a {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      display: block;
+      margin-bottom: 24px;
+   }
+}
