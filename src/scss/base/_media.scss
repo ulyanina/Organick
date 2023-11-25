@@ -1,3 +1,18 @@
+@media (max-width: 1400px) {
+   .catalog,
+   .offer {
+      & .box {
+         img {
+            width: 100%;
+            left: 0;
+            object-fit: contain;
+         }
+      }
+      &__boxes {
+         gap: 10px;
+      }
+   }
+}
 @media (max-width: 1300px) {
    .about {
       &__img {
@@ -7,6 +22,9 @@
 }
 @media (max-width: 1200px) {
    .invitation {
+      &__row {
+         padding: 100px 0;
+      }
       &__info {
          top: 55px;
          left: 45px;
@@ -15,15 +33,39 @@
          font-size: calc(19px + 17 * ((100vw - 320px) / (1380 - 320)));
       }
       &__subtitle {
-         font-size: calc(13px + 27 * ((100vw - 320px) / (1440 - 320)));
-         line-height: calc(18px + 34 * ((100vw - 320px) / (1440 - 320)));
+         font-size: calc(13px + 27 * ((100vw - 320px) / (1380 - 320)));
+         line-height: calc(15px + 37 * ((100vw - 320px) / (1380 - 320)));
          span {
             width: 188px;
             display: block;
          }
       }
    }
+   .product {
+      &__name {
+         bottom: 115px;
+      }
+      & .hr {
+         bottom: 100px;
+         width: 84%;
+      }
+      &__price-section {
+         line-height: 24px;
+      }
+      &__prices {
+         flex-direction: column;
+         width: 110px;
+      }
+   }
+   .box {
+      .catalog__img {
+         img {
+            top: calc(67px + 0px * ((100vw - 320px) / (1380 - 320)));
+         }
+      }
+   }
 }
+
 @media (max-width: 1100px) {
    .logo {
       margin-right: 80px;
@@ -57,11 +99,33 @@
          line-height: calc(50px + 34 * ((100vw - 320px) / (1380 - 320)));
       }
    }
-   // .invitation{
-   //    &__info{
-
-   //    }
-   // }
+   .about {
+      &__title {
+         font-size: calc(19px + 17 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__subtitle {
+         font-size: calc(25px + 20 * ((100vw - 320px) / (1380 - 320)));
+         line-height: calc(34px + 24 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__text {
+         line-height: calc(28px + 4 * ((100vw - 320px) / (1380 - 320)));
+      }
+   }
+   .product {
+      .old-price {
+         font-size: 14px;
+      }
+      .new-price {
+         font-size: 15px;
+      }
+      .rating {
+         width: 81px;
+         &__stars {
+            width: 94%;
+            height: 14px;
+         }
+      }
+   }
 }
 @media (max-width: 768px) {
    .promo {
@@ -70,22 +134,15 @@
       }
    }
    .invitation {
+      &__row {
+         padding: 80px 0;
+      }
       &__item {
          position: none;
-
-         // justify-content: center;
-         // text-align: center;
       }
       &__info {
-         // position: none;
-         // display: flex;
-         // flex-direction: column;
-         // justify-content: center;
-         // align-items: center;
-         // top: 50%;
-         // left: 50%;
-         // transform: translateX(-50%);
-         // transform: translateY(-50%);
+         // max-width: 160px;
+         top: 15px;
       }
       &__subtitle {
          & span {
@@ -94,14 +151,54 @@
       }
    }
    .about {
+      padding: 90px 30px 90px;
       &__row {
          flex-direction: column;
       }
       &__img {
          width: 100%;
+         height: 200px;
          height: 300px;
       }
-      
+      &__link {
+         width: 180px;
+         height: 75px;
+         & span {
+            margin-left: 30px;
+         }
+         & img {
+            margin: 0 13px 0 0;
+         }
+      }
+   }
+   .product {
+      &__name {
+         bottom: 155px;
+      }
+      & .hr {
+         bottom: 130px;
+      }
+      &__price-section {
+         flex-direction: column;
+         gap: 10px;
+      }
+      &__prices {
+         margin: auto;
+         .old-price {
+            align-self: center;
+            font-size: 15px;
+         }
+         .new-price {
+            align-self: center;
+            font-size: 16px;
+         }
+      }
+      .rating {
+         &__stars {
+            width: 100%;
+            height: 15px;
+         }
+      }
    }
 }
 @media (max-width: 576px) {
@@ -123,11 +220,67 @@
          }
       }
    }
+   .invitation {
+      &__row {
+         padding: 60px 0;
+      }
+   }
+   .about {
+      padding: 130px 21px 140px;
+      &__img {
+         margin-right: 20px;
+         height: 250px;
+      }
+      &__item {
+         & img {
+            width: 60px;
+            height: 60px;
+            padding: 10px 6px;
+            border-radius: 15px;
+         }
+      }
+      .item-text {
+         &__head {
+            font-size: calc(21px + 4 * ((100vw - 320px) / (1380 - 320)));
+            // line-height: calc(31px + 1 * ((100vw - 320px) / (1380 - 320)));
+         }
+         &__desc {
+            font-size: calc(17px + 1 * ((100vw - 320px) / (1380 - 320)));
+            line-height: calc(24px + 8 * ((100vw - 320px) / (1380 - 320)));
+         }
+      }
+      &__link {
+         width: 150px;
+         height: 60px;
+         & span {
+            margin-left: 21px;
+         }
+         & img {
+            margin: 0 10px 0 0;
+            padding: 7px;
+         }
+      }
+   }
+   .invitation {
+      &__title {
+         line-height: 32px;
+      }
+   }
 }
 
 @media (max-width: 470px) {
    .promo__info {
       left: 25px;
+   }
+   .invitation {
+      &__row {
+         padding: 50px 0;
+      }
+      &__info {
+         // max-width: 160px;
+         top: 8px;
+         left: 18px;
+      }
    }
 }
 @media (max-width: 320px) {

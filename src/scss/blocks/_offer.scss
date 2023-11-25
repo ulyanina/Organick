@@ -1,7 +1,7 @@
 .offer {
    min-height: 1060px;
    background-color: $main_grey;
-   &__all {
+   &__heading {
       display: flex;
       justify-content: space-between;
       padding-top: 139px;
@@ -23,7 +23,13 @@
    }
 
    &__items {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(100px, 447px));
+      grid-template-rows:  minmax(150px, 590px);
       gap: 20px;
+      // display: flex;
+      // gap: 20px;
+   }
+   &__box {
    }
 }
