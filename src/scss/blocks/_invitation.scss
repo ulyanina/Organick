@@ -4,18 +4,26 @@
       padding: 140px 0;
       display: flex;
       justify-content: space-between;
+      margin: 0 10px;
    }
 
    &__item {
       max-width: 665px;
       position: relative;
+      flex: 0 1 50%;
+      & img {
+         width: 100%;
+      }
+      &:first-child {
+         margin-right: 10px;
+      }
    }
    &__info {
       position: absolute;
       top: 105px;
       left: 55px;
       max-width: 265px;
-      &_white {
+      &-white {
          span {
             color: #fff;
          }

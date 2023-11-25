@@ -1,10 +1,134 @@
+@media (max-width: 1300px) {
+   .about {
+      &__img {
+         width: 40%;
+      }
+   }
+}
+@media (max-width: 1200px) {
+   .invitation {
+      &__info {
+         top: 55px;
+         left: 45px;
+      }
+      &__title {
+         font-size: calc(19px + 17 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__subtitle {
+         font-size: calc(13px + 27 * ((100vw - 320px) / (1440 - 320)));
+         line-height: calc(18px + 34 * ((100vw - 320px) / (1440 - 320)));
+         span {
+            width: 188px;
+            display: block;
+         }
+      }
+   }
+}
 @media (max-width: 1100px) {
+   .logo {
+      margin-right: 80px;
+   }
+   .menu__row {
+      ul {
+         li {
+            margin-right: 26px;
+         }
+      }
+   }
+   .promo {
+      // background: url('../img/promo/promo-bg-smaller.webp') center center/cover no-repeat;
+   }
 }
 @media (max-width: 991px) {
+   .menu {
+      &__row {
+         display: none;
+      }
+   }
+   .promo {
+      &__info {
+         width: 430px;
+      }
+      &__title {
+         font-size: calc(26px + 10 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__subtitle {
+         font-size: calc(38px + 32 * ((100vw - 320px) / (1380 - 320)));
+         line-height: calc(50px + 34 * ((100vw - 320px) / (1380 - 320)));
+      }
+   }
+   // .invitation{
+   //    &__info{
+
+   //    }
+   // }
 }
 @media (max-width: 768px) {
+   .promo {
+      &__info {
+         width: 368px;
+      }
+   }
+   .invitation {
+      &__item {
+         position: none;
+
+         // justify-content: center;
+         // text-align: center;
+      }
+      &__info {
+         // position: none;
+         // display: flex;
+         // flex-direction: column;
+         // justify-content: center;
+         // align-items: center;
+         // top: 50%;
+         // left: 50%;
+         // transform: translateX(-50%);
+         // transform: translateY(-50%);
+      }
+      &__subtitle {
+         & span {
+            width: 160px;
+         }
+      }
+   }
+   .about {
+      &__row {
+         flex-direction: column;
+      }
+      &__img {
+         width: 100%;
+         height: 300px;
+      }
+      
+   }
 }
 @media (max-width: 576px) {
+   .promo {
+      &__info {
+         width: 325px;
+      }
+      &__button {
+         width: 200px;
+         height: 73px;
+         & span {
+            top: 26px;
+            left: 28px;
+            font-size: 18px;
+         }
+         & img {
+            top: 20px;
+            padding: 9px;
+         }
+      }
+   }
+}
+
+@media (max-width: 470px) {
+   .promo__info {
+      left: 25px;
+   }
 }
 @media (max-width: 320px) {
 }
