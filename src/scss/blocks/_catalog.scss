@@ -33,7 +33,7 @@
    border-radius: 30px;
    img {
       width: 387px;
-      height: 378px;
+      max-height: 378px;
       position: absolute;
       top: 67px;
       left: 30px;
@@ -42,6 +42,7 @@
 
 .product {
    width: 100%;
+   height: 100%;
    &__variety {
       position: absolute;
       top: 30px;
@@ -89,7 +90,8 @@
       left: 30px;
       bottom: 78px;
       height: 1px;
-      width: 86%;
+      // width: 86%;
+      width: 387px;
       background: #d4d4d4;
    }
 }
@@ -107,6 +109,7 @@
 .rating {
    display: flex;
    align-items: center;
+   justify-content: flex-end;
    align-self: center;
    width: 85px;
    height: 19px;

@@ -8,12 +8,36 @@
             object-fit: contain;
          }
       }
+   }
+
+   .catalog {
       &__boxes {
+         gap: 10px;
+      }
+      .product {
+         & .hr {
+            width: calc(184px + 203 * ((100vw - 769px) / (1380 - 769)));
+         }
+      }
+   }
+   .offer {
+      &__items {
          gap: 10px;
       }
    }
 }
 @media (max-width: 1300px) {
+   .invitation {
+      &__info {
+         top: 25%;
+         left: 10%;
+      }
+      // &__subtitle {
+      //    & span {
+      //       width: 100%;
+      //    }
+      // }
+   }
    .about {
       &__img {
          width: 40%;
@@ -25,15 +49,11 @@
       &__row {
          padding: 100px 0;
       }
-      &__info {
-         top: 55px;
-         left: 45px;
-      }
       &__title {
-         font-size: calc(19px + 17 * ((100vw - 320px) / (1380 - 320)));
+         font-size: calc(16px + 20 * ((100vw - 320px) / (1380 - 320)));
       }
       &__subtitle {
-         font-size: calc(13px + 27 * ((100vw - 320px) / (1380 - 320)));
+         font-size: calc(12px + 28 * ((100vw - 320px) / (1380 - 320)));
          line-height: calc(15px + 37 * ((100vw - 320px) / (1380 - 320)));
          span {
             width: 188px;
@@ -47,7 +67,7 @@
       }
       & .hr {
          bottom: 100px;
-         width: 84%;
+         // width: 84%;
       }
       &__price-section {
          line-height: 24px;
@@ -80,6 +100,14 @@
    .promo {
       // background: url('../img/promo/promo-bg-smaller.webp') center center/cover no-repeat;
    }
+   .about {
+      padding: 110px 30px 110px;
+   }
+   .catalog {
+      .hr {
+         // width: 84%;
+      }
+   }
 }
 @media (max-width: 991px) {
    .menu {
@@ -97,6 +125,14 @@
       &__subtitle {
          font-size: calc(38px + 32 * ((100vw - 320px) / (1380 - 320)));
          line-height: calc(50px + 34 * ((100vw - 320px) / (1380 - 320)));
+      }
+   }
+   .invitation {
+      &__info {
+         // top: 58px;
+      }
+      &__title {
+         line-height: 55px;
       }
    }
    .about {
@@ -126,6 +162,27 @@
          }
       }
    }
+   .hr {
+      // width: 81%;
+   }
+   .catalog{
+      &__title {
+         font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__subtitle {
+         font-size: calc(32px + 13 * ((100vw - 320px) / (1380 - 320)));
+      }
+   }
+   .testimonials{
+      &__title {
+         font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__subtitle {
+         font-size: calc(28px + 17 * ((100vw - 320px) / (1380 - 320)));
+         line-height: calc(34px + 24 * ((100vw - 320px) / (1380 - 320)));
+         text-align: center;
+      }
+   }
 }
 @media (max-width: 768px) {
    .promo {
@@ -141,13 +198,10 @@
          position: none;
       }
       &__info {
-         // max-width: 160px;
-         top: 15px;
+         width: 160px;
       }
-      &__subtitle {
-         & span {
-            width: 160px;
-         }
+      &__title {
+         line-height: 46px;
       }
    }
    .about {
@@ -174,12 +228,18 @@
    .product {
       &__name {
          bottom: 155px;
+         left: 50%;
+         bottom: 132px;
+         transform: translateX(-50%);
+         width: 200px;
+         text-align: center;
       }
       & .hr {
-         bottom: 130px;
+         bottom: 111px;
+         width: 311px;
+         // width: calc(311px + 201 * ((100vw - 320px) / (1380 - 320)));
       }
       &__price-section {
-         flex-direction: column;
          gap: 10px;
       }
       &__prices {
@@ -198,6 +258,18 @@
             width: 100%;
             height: 15px;
          }
+      }
+   }
+   .catalog {
+      &__boxes {
+         grid-template-columns: repeat(2, minmax(100px, 447px));
+         grid-template-rows: repeat(3, minmax(150px, 590px));
+      }
+   }
+   .offer {
+      &__items {
+         grid-template-columns: repeat(2, minmax(100px, 447px));
+         grid-template-rows: repeat(3, minmax(150px, 590px));
       }
    }
 }
@@ -224,9 +296,21 @@
       &__row {
          padding: 60px 0;
       }
+      // &__info {
+      //    top: 32px;
+      //    left: 30px;
+      // }
+      &__title {
+         line-height: 33px;
+      }
+      &__subtitle {
+         & span {
+            max-width: 120px;
+         }
+      }
    }
    .about {
-      padding: 130px 21px 140px;
+      padding: 75px 21px;
       &__img {
          margin-right: 20px;
          height: 250px;
@@ -261,11 +345,6 @@
          }
       }
    }
-   .invitation {
-      &__title {
-         line-height: 32px;
-      }
-   }
 }
 
 @media (max-width: 470px) {
@@ -277,9 +356,15 @@
          padding: 50px 0;
       }
       &__info {
-         // max-width: 160px;
-         top: 8px;
-         left: 18px;
+         width: 113px;
+      }
+      &__title {
+         line-height: 22px;
+      }
+      &__subtitle {
+         & span {
+            width: 100%;
+         }
       }
    }
 }
