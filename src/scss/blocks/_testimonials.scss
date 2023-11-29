@@ -1,6 +1,6 @@
 .testimonials {
    min-height: 1248px;
-   background: url('../../img/testimonials/testimonials_bg.png') center center/contain no-repeat;
+   background: url('../../img/testimonials/testimonials_bg.png') center center/cover no-repeat;
 
    &__column {
       position: relative;
@@ -19,7 +19,7 @@
       font-size: 45px;
       line-height: 58px;
       text-transform: capitalize;
-      margin-bottom: 60px;
+      margin: 0 20px 60px;
    }
 
    &__item {
@@ -53,8 +53,9 @@
 .opinion {
    display: flex;
    flex-direction: column;
-   flex: 1 0 auto;
+   flex: 1 1 auto;
    margin-bottom: 100px;
+   padding: 0 20px;
    &__avatar {
       width: 115px;
       height: 115px;

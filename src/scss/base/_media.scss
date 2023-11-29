@@ -9,15 +9,14 @@
          }
       }
    }
-
+   .product {
+      & .hr {
+         width: calc(184px + 203 * ((100vw - 769px) / (1380 - 769)));
+      }
+   }
    .catalog {
       &__boxes {
          gap: 10px;
-      }
-      .product {
-         & .hr {
-            width: calc(184px + 203 * ((100vw - 769px) / (1380 - 769)));
-         }
       }
    }
    .offer {
@@ -75,6 +74,12 @@
       &__prices {
          flex-direction: column;
          width: 110px;
+         // .old-price {
+         //    align-self: center;
+         // }
+         // .new-price {
+         //    align-self: center;
+         // }
       }
    }
    .box {
@@ -148,11 +153,18 @@
       }
    }
    .product {
+      &__variety {
+         height: 34px;
+         width: 105px;
+      }
+      &__name {
+         font-size: 21px;
+      }
       .old-price {
-         font-size: 14px;
+         font-size: 15px;
       }
       .new-price {
-         font-size: 15px;
+         font-size: 16px;
       }
       .rating {
          width: 81px;
@@ -165,7 +177,7 @@
    .hr {
       // width: 81%;
    }
-   .catalog{
+   .catalog {
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
       }
@@ -173,7 +185,7 @@
          font-size: calc(32px + 13 * ((100vw - 320px) / (1380 - 320)));
       }
    }
-   .testimonials{
+   .testimonials {
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
       }
@@ -227,6 +239,7 @@
    }
    .product {
       &__name {
+         font-size: 22px;
          bottom: 155px;
          left: 50%;
          bottom: 132px;
@@ -236,14 +249,16 @@
       }
       & .hr {
          bottom: 111px;
-         width: 311px;
-         // width: calc(311px + 201 * ((100vw - 320px) / (1380 - 320)));
+         left: 30px;
+         // width: 80%;
+         // width: 306px;
+         width: calc(100px + 206 * ((100vw - 320px) / (768 - 320)));
       }
       &__price-section {
          gap: 10px;
+         padding: 0 30px;
       }
       &__prices {
-         margin: auto;
          .old-price {
             align-self: center;
             font-size: 15px;
@@ -310,7 +325,7 @@
       }
    }
    .about {
-      padding: 75px 21px;
+      padding: 60px 21px;
       &__img {
          margin-right: 20px;
          height: 250px;
@@ -345,6 +360,56 @@
          }
       }
    }
+   .product {
+      &__variety {
+         height: 31px;
+         width: 100px;
+         font-size: 14px;
+      }
+      &__name {
+         font-size: 21px;
+         //    bottom: 155px;
+         //    left: 50%;
+         //    bottom: 132px;
+         //    transform: translateX(-50%);
+         //    width: 200px;
+         //    text-align: center;
+      }
+      & .hr {
+         left: 50%;
+         transform: translateX(-50%);
+         bottom: 121px;
+      }
+      &__price-section {
+         flex-direction: column;
+         padding: 0 22px;
+         line-height: 22px;
+      }
+      &__prices {
+         align-self: center;
+         line-height: 21px;
+         & .old-price {
+            align-self: center;
+         }
+         & .new-price {
+            align-self: center;
+         }
+         // .old-price {
+         //    align-self: flex-start;
+         //    font-size: 14px;
+         // }
+         // .new-price {
+         //    align-self: flex-start;
+         //    font-size: 15px;
+         // }
+      }
+      .rating {
+         &__stars {
+            width: 93%;
+            height: 14px;
+         }
+      }
+   }
 }
 
 @media (max-width: 470px) {
@@ -367,6 +432,50 @@
          }
       }
    }
+   .product {
+      &__variety {
+         height: 29px;
+         width: 93px;
+      }
+      &__name {
+         font-size: 18px;
+      }
+      & .hr {
+       
+      }
+      &__price-section {
+         
+      }
+      &__prices {
+        
+      }
+      // & .old-price {
+      //    align-self: center;
+      // }
+      // & .new-price {
+      //    align-self: center;
+      // }
+   }
+}
+@media (max-width: 400px) {
+   .product{
+      &__name {
+         font-size: 15px;
+         width: 126px;
+         line-height: 23px;
+         bottom: 137px;
+      }
+      & .old-price {
+         font-size: 14px;
+      }
+   }
+   // .catalog {
+   //    .product {
+   //       &__name {
+   //          font-size: 21px;
+   //       }
+   //    }
+   // }
 }
 @media (max-width: 320px) {
 }
