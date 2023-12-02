@@ -55,7 +55,7 @@
    flex-direction: column;
    flex: 1 1 auto;
    margin-bottom: 100px;
-   padding: 0 20px;
+   padding: 0 30px;
    &__avatar {
       width: 115px;
       height: 115px;
@@ -88,10 +88,14 @@
 }
 
 .benefits {
-   display: flex;
-   justify-content: space-around;
-   width: 1104px;
-   height: 250px;
+   // display: grid;
+   // grid-template-columns: repeat(auto-fill, minmax(100px, 250px));
+   // grid-template-rows: minmax(100px, max-content);
+   // column-gap: 26px;
+   // row-gap: 26px;
+   // margin: 0 20px;
+   // max-width: 1104px;
+   // max-height: 250px; //! qui è da cambiare!
    &__item {
       position: relative;
       display: flex;
@@ -130,3 +134,48 @@
       }
    }
 }
+
+// .benefits {
+//    display: flex;
+//    justify-content: space-around;
+//    // flex: 0 1 auto;
+//    max-width: 1104px;
+//    max-height: 250px;
+//    &__item {
+//       position: relative;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       width: 250px;
+//       height: 250px;
+//       background-color: #f1f1f1;
+//       border: 6px solid rgba(126, 182, 147, 1);
+//       border-radius: 50%;
+//       &::after {
+//          content: '';
+//          border: 6px solid #fff;
+//          border-radius: 50%;
+//          width: 238px;
+//          height: 238px;
+//          position: absolute;
+//          top: 0;
+//          left: 0;
+//       }
+//    }
+
+//    &__desc {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       span {
+//          &:first-child {
+//             font-weight: 700;
+//             font-size: 42px;
+//          }
+//          &:last-child {
+//             font-weight: 700;
+//             font-size: 18px;
+//          }
+//       }
+//    }
+// }

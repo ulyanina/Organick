@@ -1,10 +1,10 @@
 .offer {
-   min-height: 1060px;
+   // min-height: 1060px;
    background-color: $main_grey;
+   padding: 140px 20px 160px;
    &__heading {
       display: flex;
       justify-content: space-between;
-      padding-top: 139px;
       margin-bottom: 44px;
    }
 
@@ -20,12 +20,14 @@
       text-transform: capitalize;
       color: $main_grey;
       align-self: flex-end;
+      margin-bottom: 13px;
    }
 
    &__items {
       display: grid;
       grid-template-columns: repeat(3, minmax(100px, 447px));
-      grid-template-rows:  minmax(150px, 590px);
+      grid-template-rows: minmax(150px, 590px);
+      grid-auto-rows: minmax(150px, 590px);
       gap: 20px;
       // display: flex;
       // gap: 20px;

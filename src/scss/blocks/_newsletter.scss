@@ -1,9 +1,11 @@
 .newsletter {
    min-height: 320px;
    width: 100%;
+   margin: 0 10px;
    .container {
-      background: url("/img/newsletter/newsletter_bg.png") 0 0 / cover no-repeat;
+      background: url('/img/newsletter/newsletter_bg.png') 0 0 / cover no-repeat;
       padding: 100px 70px;
+      // min-width: 100%;
    }
    &__row {
       display: flex;
