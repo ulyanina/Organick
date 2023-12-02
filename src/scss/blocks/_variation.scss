@@ -1,5 +1,6 @@
 .variation {
-   min-height: 860px;
+   // display: flex;
+   // min-height: 860px;
    padding: 140px 0;
    background: #eff6f1;
    &__row {
@@ -13,14 +14,16 @@
       position: relative;
       img {
          max-height: 580px;
+         width: 100%;
          object-fit: contain;
       }
    }
 
    &__name {
       position: absolute;
-      top: 243px;
-      left: 90px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 281px;
       height: 95px;
       border-radius: 20px;
@@ -29,7 +32,10 @@
       font-weight: 700;
       font-size: 25px;
       line-height: 35px;
-      text-align: center;
-      padding-top: 30px;
+      // text-align: center;
+      // padding-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
 }

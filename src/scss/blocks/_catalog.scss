@@ -4,18 +4,16 @@
    &__title {
       text-align: center;
    }
-
    &__subtitle {
       text-align: center;
       font-weight: 700;
       font-size: 45px;
       margin-bottom: 48px;
    }
-
    &__boxes {
       display: grid;
       grid-template-columns: repeat(3, minmax(100px, 447px));
-      grid-template-rows: repeat(2, minmax(100px, 590px));
+      grid-template-rows: repeat(2, minmax(10px, 590px));
       gap: 20px;
    }
 
@@ -33,6 +31,7 @@
    border-radius: 30px;
    img {
       width: 387px;
+      // height: 378px;
       max-height: 378px;
       position: absolute;
       top: 67px;

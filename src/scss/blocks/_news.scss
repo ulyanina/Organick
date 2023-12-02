@@ -1,9 +1,9 @@
 .news {
-   padding: 130px 0 110px;
+   padding: 130px 10px 110px;
    &__titles {
       display: flex;
       justify-content: space-between;
-      height: 210px;
+      // height: 210px;
       margin-bottom: 40px;
    }
 
@@ -20,34 +20,34 @@
 
    &__button {
       margin-right: 10px;
+      // margin-left: 30px;
       align-self: center;
       background: transparent;
       border: 1px solid $main_grey;
       color: $main_grey;
+      min-width: 219px;
    }
 
    &__cards {
       display: flex;
       justify-content: space-between;
+      gap: 30px;
       max-width: 1370px;
       height: 635px;
-      margin: 0 5px;
    }
-
+   &__img {
+      // max-width: 670px;
+      width: 100%;
+   }
    &__item {
       position: relative;
-      img {
-         max-width: 670px;
-      }
+
       a {
-         color: $main_grey;
-         position: absolute;
-         top: 250px;
-         left: 35px;
-         z-index: 2;
-      }
-      .subtitle {
-         font-size: 24px;
+         // color: $main_grey;
+         // position: absolute;
+         // top: 250px;
+         // left: 35px;
+         // z-index: 2;
       }
    }
 
@@ -55,9 +55,23 @@
       background: #ffffff;
       box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.14);
       border-radius: 30px;
-      width: 610px;
-      height: 337px;
-      padding: 50px;
+      // max-width: 610px;
+      max-width: 90%;
+      min-height: 337px;
+      padding: 53px 42px 60px 50px;
+      color: $main_grey;
+      position: absolute;
+      top: 250px;
+      left: 35px;
+      z-index: 2;
+      .subtitle {
+         // font-size: 24px;
+         font-size: 25px;
+         font-weight: 700;
+         line-height: 35px;
+         letter-spacing: 0.36px;
+         margin-bottom: 38px;
+      }
       .button {
          height: 48px;
          border-radius: 0;
@@ -87,14 +101,14 @@
    }
 
    &__content {
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 32px;
       color: #525c60;
-      width: 442px;
-      margin-bottom: 12px;
+      max-width: 442px;
+      margin-bottom: 22px;
    }
 }
 .container {
