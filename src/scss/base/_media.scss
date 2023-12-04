@@ -190,6 +190,22 @@
          top: 180px;
       }
    }
+   .newsletter {
+      &__form {
+         form {
+            input {
+               width: 310px;
+            }
+            & .button {
+               width: 195px;
+            }
+         }
+      }
+      &__subtitle {
+         font-size: calc(30px + 20 * ((100vw - 320px) / (1380 - 320)));
+         line-height: calc(37px + 23 * ((100vw - 320px) / (1380 - 320)));
+      }
+   }
 }
 @media (max-width: 991px) {
    .menu {
@@ -363,12 +379,49 @@
          margin-left: 40px;
          margin-right: 0;
       }
-      &__cards{
+      &__cards {
          min-height: 520px;
       }
       &__new {
          padding: 35px;
          top: calc(60px + 120 * ((100vw - 320px) / (1440 - 768)));
+      }
+   }
+   .newsletter {
+      & .container {
+         padding: 88px 65px;
+      }
+      &__row {
+         // flex-direction: column;
+         // align-items: center;
+      }
+      &__subtitle {
+         font-size: calc(30px + 20 * ((100vw - 320px) / (1380 - 320)));
+         line-height: calc(37px + 23 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__form {
+         form {
+            input {
+               width: 225px;
+               height: 74px;
+               padding: 0 15px;
+            }
+            & .button {
+               width: 157px;
+               height: 74px;
+               margin-right: 0;
+            }
+            & span {
+               top: 27px;
+               left: 19px;
+               font-size: 17px;
+            }
+            & img {
+               top: 22px;
+               right: 5px;
+               padding: 10px;
+            }
+         }
       }
    }
 }
@@ -386,6 +439,11 @@
    .news {
       &__new {
          left: 25px;
+      }
+   }
+   .newsletter {
+      & .container {
+         padding: 80px 32px;
       }
    }
 }
@@ -572,6 +630,16 @@
          left: 50%;
          top: 50%;
          transform: translate(-50%, -50%);
+      }
+   }
+   .newsletter {
+      &__subtitle {
+         max-width: 470px;
+         margin-bottom: 30px;
+      }
+      &__row {
+         flex-direction: column;
+         align-items: center;
       }
    }
 }
@@ -862,7 +930,7 @@
             top: 19px;
          }
       }
-      &__cards{
+      &__cards {
          min-height: 471px;
       }
       &__new {
@@ -898,6 +966,24 @@
          width: 193px;
          height: 65px;
          font-size: 24px;
+      }
+   }
+   .newsletter {
+      & .container {
+         padding: 54px 32px;
+      }
+      &__subtitle {
+         text-align: center;
+      }
+      &__form {
+         & form {
+            flex-direction: column;
+            align-items: center;
+            & input {
+               margin-right: 0;
+               margin-bottom: 10px;
+            }
+         }
       }
    }
 }
