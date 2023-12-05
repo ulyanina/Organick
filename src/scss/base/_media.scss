@@ -9,6 +9,30 @@
          }
       }
    }
+   // .ecological{
+   //    &__content {
+   //       width: 720px;
+   //       max-height: 623px;
+   //    }
+   // }
+}
+@media (max-width: 1440px) {
+   .ecological {
+      &__title {
+         font-size: calc(26px + 10 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__subtitle {
+         font-size: calc(24px + 20 * ((100vw - 320px) / (1380 - 320)));
+         line-height: calc(34px + 24 * ((100vw - 320px) / (1380 - 320)));
+         max-width: 500px;
+      }
+      &__content {
+         // width: calc(100% + 50 * ((100vw - 320px) / (1380 - 320)));
+         // width: 110%;
+         //       width: 720px;
+         //       max-height: 623px;
+      }
+   }
 }
 @media (max-width: 1400px) {
    .catalog,
@@ -163,16 +187,19 @@
          grid-template-rows: repeat(2, minmax(150px, 530px));
       }
    }
+   .benefits {
+      column-gap: 10px;
+   }
    .offer {
       &__items {
          grid-template-rows: minmax(150px, 530px);
       }
    }
-   .ecological {
-      &__content {
-         right: 0;
-      }
-   }
+   // .ecological {
+   //    &__content {
+   //       right: 0;
+   //    }
+   // }
    .variation {
       padding: 110px 0;
       &__name {
@@ -245,6 +272,19 @@
          line-height: calc(28px + 4 * ((100vw - 320px) / (1380 - 320)));
       }
    }
+   .catalog {
+      padding: 100px 10px 80px;
+      &__boxes {
+         gap: 15px;
+         // grid-template-rows: repeat(2,minmax(150px,520px));
+      }
+      &__title {
+         font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
+      }
+      &__subtitle {
+         font-size: calc(32px + 13 * ((100vw - 320px) / (1380 - 320)));
+      }
+   }
    .product {
       &__variety {
          height: 34px;
@@ -267,22 +307,9 @@
          }
       }
    }
-   .hr {
-      // width: 81%;
-   }
-   .catalog {
-      &__boxes {
-         gap: 15px;
-         // grid-template-rows: repeat(2,minmax(150px,520px));
-      }
-      &__title {
-         font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
-      }
-      &__subtitle {
-         font-size: calc(32px + 13 * ((100vw - 320px) / (1380 - 320)));
-      }
-   }
+
    .testimonials {
+      padding: 80px 13px 110px;
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
       }
@@ -295,31 +322,40 @@
          width: calc(276px + 690 * ((100vw - 320px) / (1380 - 320)));
       }
    }
-   // .benefits {
-   //    width: 700px;
-   //    height: 200px;
+   .opinion {
+      margin-bottom: 90px;
+      &__status {
+         margin-bottom: 75px;
+      }
+   }
+   .benefits {
+      grid-template-columns: repeat(4, minmax(100px, 175px));
+      grid-template-rows: minmax(100px, 175px);
 
-   //    &__item {
-   //       width: 155px;
-   //       height: 155px;
-   //       &::after {
-   //          width: 143px;
-   //          height: 143px;
-   //       }
-   //    }
-   //    &__desc {
-   //       & span {
-   //          &:first-child {
-   //             font-size: 30px;
-   //          }
-   //       }
-   //       & span {
-   //          &:last-child {
-   //             font-size: 14px;
-   //          }
-   //       }
-   //    }
-   // }
+      //    width: 700px;
+      //    height: 200px;
+
+      //    &__item {
+      //       width: 155px;
+      //       height: 155px;
+      //       &::after {
+      //          width: 143px;
+      //          height: 143px;
+      //       }
+      //    }
+      &__desc {
+         & span {
+            &:first-child {
+               font-size: 37px;
+            }
+         }
+         & span {
+            &:last-child {
+               font-size: 16px;
+            }
+         }
+      }
+   }
    .offer {
       padding: 90px 10px 130px;
       &__items {
@@ -511,11 +547,9 @@
       }
       &__prices {
          .old-price {
-            align-self: center;
             font-size: 15px;
          }
          .new-price {
-            align-self: center;
             font-size: 16px;
          }
       }
@@ -539,8 +573,32 @@
       }
    }
    .testimonials {
+      padding: 80px 13px;
       .opinion {
          line-height: 28px;
+      }
+   }
+   .benefits {
+      grid-template-columns: repeat(4, minmax(100px, 130px));
+      grid-template-rows: minmax(100px, 130px);
+      column-gap: 10px;
+      &__item {
+         border: 5px solid #7eb693;
+         &::after {
+            border: 5px solid #fff;
+         }
+      }
+      &__desc {
+         & span {
+            &:first-child {
+               font-size: 24px;
+            }
+         }
+         & span {
+            &:last-child {
+               font-size: 12px;
+            }
+         }
       }
    }
    .offer {
@@ -782,6 +840,21 @@
          }
       }
    }
+   .opinion {
+      margin-bottom: 70px;
+      &__status {
+         margin-bottom: 55px;
+      }
+   }
+   .testimonials {
+      padding: 70px 13px;
+   }
+   .benefits {
+      grid-template-columns: repeat(2, minmax(100px, 130px));
+      grid-template-rows: repeat(2, minmax(100px, 130px));
+      column-gap: 30px;
+      row-gap: 30px;
+   }
    .offer {
       padding: 55px 20px 100px;
       &__items {
@@ -1012,6 +1085,10 @@
    //       }
    //    }
    // }
+   .benefits {
+      column-gap: 15px;
+      row-gap: 15px;
+   }
    .offer {
       &__items {
          grid-template-rows: repeat(2, minmax(150px, 415px));
