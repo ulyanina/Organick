@@ -163,6 +163,9 @@
          }
       }
    }
+   .news {
+      padding: 65px 10px 110px;
+   }
 }
 
 @media (max-width: 1100px) {
@@ -407,7 +410,10 @@
       }
    }
    .news {
-      padding: 90px 10px 110px;
+      padding: 50px 10px 110px;
+      &__titles {
+         margin-bottom: 0;
+      }
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
       }
@@ -579,9 +585,38 @@
       }
    }
    .testimonials {
-      padding: 80px 13px;
+      padding: 60px 13px;
+      .title {
+         line-height: 57px;
+      }
+      &__subtitle {
+         margin: 0 20px 40px;
+      }
       .opinion {
          line-height: 28px;
+         margin-bottom: 57px;
+         &__avatar {
+            margin-bottom: 13px;
+         }
+         & .rating {
+            justify-content: center;
+            margin-bottom: 25px;
+            &__stars {
+               width: 88%;
+               height: 20px;
+            }
+         }
+         &__text {
+            font-size: 17px;
+            line-height: 27px;
+         }
+         &__author {
+            font-size: 24px;
+            line-height: 30px;
+         }
+         &__status {
+            margin-bottom: 43px;
+         }
       }
    }
    .benefits {
@@ -674,6 +709,7 @@
       }
    }
    .news {
+      padding: 45px 10px 110px;
       &__cards {
          gap: 10px;
          flex-direction: column;
@@ -748,17 +784,35 @@
    .invitation {
       &__row {
          padding: 60px 0;
+         flex-direction: column;
+         // max-height: 400px;
+      }
+      &__item {
+         // & img{
+         //    height: 50%;
+         // }
+         &:first-child {
+            margin-right: 0;
+            margin-bottom: 10px;
+         }
       }
       // &__info {
       //    top: 32px;
       //    left: 30px;
       // }
       &__title {
-         line-height: 33px;
+         // line-height: 33px;
+         font-size: 24px;
+         margin-bottom: 5px;
       }
       &__subtitle {
+         font-size: 30px;
+         line-height: 38px;
+         width: 195px;
          & span {
-            max-width: 120px;
+            font-size: 30px;
+            line-height: 38px;
+            // max-width: 120px;
          }
       }
    }
@@ -799,6 +853,7 @@
       }
    }
    .catalog {
+      padding: 35px 10px 30px;
       &__boxes {
          grid-template-rows: repeat(3, minmax(150px, 500px));
       }
@@ -860,7 +915,25 @@
       }
    }
    .testimonials {
-      padding: 70px 13px;
+      padding: 50px 13px;
+      .opinion {
+         margin-bottom: 42px;
+         & .rating {
+            margin-bottom: 19px;
+            &__stars {
+               width: 71%;
+               height: 16px;
+            }
+         }
+         &__text {
+            font-size: 15px;
+            line-height: 21px;
+            // margin-bottom: 32px;
+         }
+         &__status {
+            margin-bottom: 32px;
+         }
+      }
    }
    .benefits {
       grid-template-columns: repeat(2, minmax(100px, 130px));
@@ -869,7 +942,7 @@
       row-gap: 30px;
    }
    .offer {
-      padding: 55px 20px 100px;
+      padding: 30px 20px 70px;
       &__items {
          grid-template-rows: repeat(2, minmax(150px, 500px));
       }
@@ -947,12 +1020,14 @@
       }
    }
    .news {
+      padding: 30px 10px 75px
       &__cards {
          flex-direction: column;
       }
       &__titles {
          flex-direction: column;
          text-align: center;
+         margin-bottom: 20px;
       }
       &__new {
          width: 400px;
@@ -975,18 +1050,24 @@
       left: 25px;
    }
    .invitation {
-      &__row {
-         padding: 50px 0;
-      }
-      &__info {
-         width: 113px;
-      }
+      // &__row {
+      //    padding: 50px 0;
+      // }
+      // &__info {
+      //    width: 113px;
+      // }
       &__title {
+         font-size: 22px;
          line-height: 22px;
+         margin-bottom: 12px;
       }
       &__subtitle {
+         font-size: 22px;
+         line-height: 23px;
          & span {
-            width: 100%;
+            font-size: 22px;
+            line-height: 23px;
+            //       width: 100%;
          }
       }
    }
@@ -1015,6 +1096,14 @@
       // & .new-price {
       //    align-self: center;
       // }
+   }
+   .testimonials {
+      .title {
+         line-height: 44px;
+      }
+      &__subtitle {
+         margin: 0 20px 32px;
+      }
    }
    .offer {
       &__items {
