@@ -26,11 +26,11 @@
          line-height: calc(34px + 24 * ((100vw - 320px) / (1380 - 320)));
          max-width: 500px;
       }
+
       &__content {
          // width: calc(100% + 50 * ((100vw - 320px) / (1380 - 320)));
          // width: 110%;
          //       width: 720px;
-         //       max-height: 623px;
       }
    }
 }
@@ -395,7 +395,7 @@
       // min-height: 704px;
       &__content {
          right: 0;
-         width: 670px;
+         width: 621px;
          // padding: 34px 30px 40px 40px;
       }
    }
@@ -448,6 +448,7 @@
       &__form {
          form {
             input {
+               font-size: 17px;
                width: 225px;
                height: 74px;
                padding: 0 15px;
@@ -516,7 +517,7 @@
       }
    }
    .about {
-      padding: 90px 30px 90px;
+      padding: 40px 30px 90px;
       &__row {
          flex-direction: column;
       }
@@ -524,6 +525,10 @@
          width: 100%;
          height: 200px;
          height: 300px;
+         margin-bottom: 20px;
+      }
+      &__title {
+         line-height: 44px;
       }
       &__link {
          width: 180px;
@@ -664,34 +669,24 @@
          }
       }
    }
-   .ecological {
-      //    &__bg {
-      //       flex-direction: column;
-      //       min-height: 500px;
-      //       & img {
-      //          width: 100%;
-      //          height: 200px;
-      //       }
-      //    }
-      // //    &__empty {
-      // //       min-height: auto;
-      // //       width: 100%;
-
-      // //       margin-left: 20px;
-      // //    }
-      &__content {
-         width: 530px;
-         //       left: 10px;
-         //       height: 100%;
-         //    //    width: 534px;
-         // //       // margin-left: 15px;
-         // //       // top: 335px;
-         // //       // padding: 34px 30px 40px 40px;
-      }
-      //    &__subtitle {
-      //       max-width: 100%;
-      //    }
-   }
+   // .ecological {
+   //    &__title {
+   //       line-height: 55px;
+   //    }
+   //    &__content {
+   //       width: 515px;
+   //       padding: 45px 52px 40px;
+   //    //    & .content {
+   //    //       font-weight: 400;
+   //    //       font-size: 18px;
+   //    //       line-height: 29px;
+   //    //       margin-bottom: 20px;
+   //    //    }
+   //    }
+   //    // //    &__subtitle {
+   //    // //       max-width: 100%;
+   //    // //    }
+   // }
    .variation {
       padding: 90px 0;
       &__row {
@@ -710,6 +705,9 @@
    }
    .news {
       padding: 45px 10px 110px;
+      &__title {
+         line-height: 48px;
+      }
       &__cards {
          gap: 10px;
          flex-direction: column;
@@ -817,7 +815,7 @@
       }
    }
    .about {
-      padding: 60px 21px;
+      padding: 40px 21px;
       &__img {
          margin-right: 20px;
          height: 250px;
@@ -882,10 +880,11 @@
          flex-direction: column;
          padding: 0 22px;
          line-height: 22px;
+         gap: 13px;
       }
       &__prices {
          align-self: center;
-         line-height: 21px;
+         line-height: 19px;
          & .old-price {
             align-self: center;
          }
@@ -977,23 +976,23 @@
          }
       }
    }
-   .ecological {
-      // &__content {
-      //    width: 443px;
-      // }
-      &__bg {
-         flex-direction: column;
-         min-height: 500px;
-         & img {
-            width: 100%;
-            height: 200px;
-         }
-      }
-      &__content {
-         left: 10px;
-         max-height: 100%;
-      }
-   }
+   // .ecological {
+   //    // &__content {
+   //    //    width: 443px;
+   //    // }
+   //    &__bg {
+   //       flex-direction: column;
+   //       min-height: 500px;
+   //       & img {
+   //          width: 100%;
+   //          height: 200px;
+   //       }
+   //    }
+   //    &__content {
+   //       left: 10px;
+   //       max-height: 100%;
+   //    }
+   // }
    .variation {
       padding: 75px 20px;
       &__row {
@@ -1020,8 +1019,7 @@
       }
    }
    .news {
-      padding: 30px 10px 75px
-      &__cards {
+      padding: 30px 10px 75px &__cards {
          flex-direction: column;
       }
       &__titles {
@@ -1053,20 +1051,20 @@
       // &__row {
       //    padding: 50px 0;
       // }
-      // &__info {
-      //    width: 113px;
-      // }
+      &__info {
+         top: 29%;
+      }
       &__title {
          font-size: 22px;
          line-height: 22px;
          margin-bottom: 12px;
       }
       &__subtitle {
-         font-size: 22px;
-         line-height: 23px;
+         font-size: 26px;
+         line-height: 28px;
          & span {
-            font-size: 22px;
-            line-height: 23px;
+            font-size: 26px;
+            line-height: 28px;
             //       width: 100%;
          }
       }
