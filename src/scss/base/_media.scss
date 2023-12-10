@@ -19,10 +19,12 @@
 @media (max-width: 1440px) {
    .ecological {
       &__title {
-         font-size: calc(26px + 10 * ((100vw - 320px) / (1380 - 320)));
+         // font-size: calc(26px + 10 * ((100vw - 320px) / (1380 - 320)));
+         font-size: calc(24px + 12 * ((100vw - 320px) / (1380 - 320)));
       }
       &__subtitle {
-         font-size: calc(24px + 20 * ((100vw - 320px) / (1380 - 320)));
+         // font-size: calc(24px + 20 * ((100vw - 320px) / (1380 - 320)));
+         font-size: calc(22px + 22 * ((100vw - 320px) / (1380 - 320)));
          line-height: calc(34px + 24 * ((100vw - 320px) / (1380 - 320)));
          max-width: 500px;
       }
@@ -238,6 +240,56 @@
       &__subtitle {
          font-size: calc(30px + 20 * ((100vw - 320px) / (1380 - 320)));
          line-height: calc(37px + 23 * ((100vw - 320px) / (1380 - 320)));
+      }
+   }
+   .contacts {
+      margin: 0;
+      min-height: 500px;
+      padding: 100px 0;
+      &__section {
+         min-width: 30%;
+      }
+      &__subheader {
+         font-size: 26px;
+      }
+      .contact {
+         flex: 0 1 354px;
+         &__subheader {
+            font-size: 17px;
+         }
+         &__content {
+            font-size: 16px;
+            margin-bottom: 25px;
+            &:last-child {
+               margin-bottom: 10px;
+            }
+         }
+      }
+      .socials {
+         flex: 0 1 354px;
+         &__subheader {
+            & img {
+               width: 170px;
+            }
+         }
+         &__desc {
+            font-size: 16px;
+            line-height: 30px;
+         }
+         &__row {
+            gap: 16px;
+            span {
+               width: 50px;
+               height: 50px;
+            }
+         }
+      }
+      .utility {
+         flex: 0 1 354px;
+         & a {
+            font-size: 16px;
+            margin-bottom: 20px;
+         }
       }
    }
 }
@@ -471,6 +523,66 @@
          }
       }
    }
+   .contacts {
+      // margin: 0;
+      // min-height: 500px;
+      // padding: 100px 0;
+      &__section {
+         // min-width: 30%;
+      }
+      &__subheader {
+         font-size: 25px;
+      }
+      .contact {
+         // flex: 0 1 354px;
+         &__subheader {
+            font-size: 16px;
+         }
+         &__content {
+            font-size: 15px;
+            // margin-bottom: 25px;
+            &:last-child {
+               // margin-bottom: 10px;
+            }
+         }
+      }
+      .socials {
+         // flex: 0 1 354px;
+         margin: 0;
+         padding: 0 15px;
+         &__subheader {
+            & img {
+               width: 160px;
+            }
+         }
+         &__desc {
+            font-size: 15px;
+            line-height: 29px;
+         }
+         &__row {
+            gap: 14px;
+            & span {
+               width: 45px;
+               height: 45px;
+               & img {
+                  // width: 18px;
+               }
+            }
+         }
+      }
+      .utility {
+         // flex: 0 1 354px;
+         & a {
+            font-size: 15px;
+            // margin-bottom: 20px;
+         }
+      }
+   }
+   .footer {
+      &__content {
+         font-size: 15px;
+      }
+   }
 }
 @media (max-width: 880px) {
    .catalog {
@@ -669,24 +781,33 @@
          }
       }
    }
-   // .ecological {
-   //    &__title {
-   //       line-height: 55px;
-   //    }
-   //    &__content {
-   //       width: 515px;
-   //       padding: 45px 52px 40px;
-   //    //    & .content {
-   //    //       font-weight: 400;
-   //    //       font-size: 18px;
-   //    //       line-height: 29px;
-   //    //       margin-bottom: 20px;
-   //    //    }
-   //    }
-   //    // //    &__subtitle {
-   //    // //       max-width: 100%;
-   //    // //    }
-   // }
+   .ecological {
+      //    &__title {
+      //       line-height: 55px;
+      //    }
+      &__bg {
+         min-height: 560px;
+      }
+      &__content {
+         padding: 33px 37px 35px;
+         width: 172%;
+         & .headline {
+            font-size: 21px;
+         }
+         & .content {
+            line-height: 23px;
+         }
+      }
+      &__title {
+         line-height: 35px;
+      }
+      &__subtitle {
+         margin-bottom: 18px;
+      }
+      //    // //    &__subtitle {
+      //    // //       max-width: 100%;
+      //    // //    }
+   }
    .variation {
       padding: 90px 0;
       &__row {
@@ -743,6 +864,69 @@
       &__row {
          flex-direction: column;
          align-items: center;
+      }
+   }
+   .contacts {
+      min-height: 430px;
+      padding: 70px 30px;
+      &__section {
+      }
+      &__subheader {
+         font-size: 20px;
+      }
+      .contact {
+         &__column {
+            margin-right: 15px;
+         }
+         &__subheader {
+            font-size: 14px;
+         }
+         &__content {
+            font-size: 13px;
+            line-height: 17px;
+            &:last-child {
+               text-align: end;
+            }
+         }
+      }
+      .socials {
+         // margin: 0;
+         padding: 0 10px;
+         &__subheader {
+            & img {
+               width: 135px;
+            }
+         }
+         &__desc {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 25px;
+         }
+         &__row {
+            gap: 10px;
+            & span {
+               width: 32px;
+               height: 32px;
+               & img {
+                  width: 16px;
+               }
+            }
+         }
+      }
+      .utility {
+         // flex: 0 1 354px;
+         &__column {
+            margin-left: 15px;
+         }
+         & a {
+            font-size: 14px;
+            margin-bottom: 15px;
+         }
+      }
+   }
+   .footer {
+      &__content {
+         font-size: 12px;
       }
    }
 }
@@ -976,23 +1160,27 @@
          }
       }
    }
-   // .ecological {
-   //    // &__content {
-   //    //    width: 443px;
-   //    // }
-   //    &__bg {
-   //       flex-direction: column;
-   //       min-height: 500px;
-   //       & img {
-   //          width: 100%;
-   //          height: 200px;
-   //       }
-   //    }
-   //    &__content {
-   //       left: 10px;
-   //       max-height: 100%;
-   //    }
-   // }
+   .ecological {
+      &__bg {
+         flex-direction: column;
+         min-height: 765px;
+         & img {
+            width: 100%;
+            height: 280px;
+         }
+      }
+      &__empty {
+         width: 100%;
+         height: 300px;
+      }
+      &__content {
+         left: 0;
+         top: -10%;
+         width: 100%;
+         border-radius: 30px 30px 0px 0px;
+         max-height: unset;
+      }
+   }
    .variation {
       padding: 75px 20px;
       &__row {
@@ -1019,7 +1207,8 @@
       }
    }
    .news {
-      padding: 30px 10px 75px &__cards {
+      padding: 30px 10px 75px;
+      &__cards {
          flex-direction: column;
       }
       &__titles {
@@ -1041,8 +1230,89 @@
          margin-bottom: 17px;
       }
    }
+   .contacts {
+      padding: 60px 30px 40px;
+      &__row {
+         grid-template-columns: minmax(100px, 354px) minmax(100px, 354px);
+         grid-template-rows: minmax(100px, 163px) minmax(100px, 213px);
+      }
+      &__subheader {
+         font-size: 18px;
+         line-height: 26px;
+      }
+      & .contact {
+         grid-column: 1/2;
+         grid-row: 2/3;
+         & .contact-us {
+            margin-bottom: 20px;
+         }
+         &__subheader {
+            // font-size: 16px;
+            line-height: 12px;
+         }
+         &__content {
+            // font-size: 15px;
+            // margin-bottom: 12px;
+            &:last-child {
+               // margin-bottom: 10px;
+            }
+         }
+      }
+      & .socials {
+         grid-column: 1/3;
+         grid-row: 1/2;
+         &__column {
+            align-items: flex-start;
+         }
+         &__subheader {
+            margin-bottom: 12px;
+            & img {
+               width: 127px;
+            }
+         }
+         &__desc {
+            font-size: 14px;
+            line-height: 19px;
+            max-width: 410px;
+            margin-bottom: 17px;
+            text-align: left;
+         }
+         &__row {
+            gap: 14px;
+            & span {
+               width: 28px;
+               height: 28px;
+               & img {
+                  width: 15px;
+               }
+            }
+         }
+      }
+      & .utility {
+         grid-column: 2/3;
+         grid-row: 2/3;
+         &::before {
+            display: none;
+         }
+         & a {
+            font-size: 13px;
+            line-height: 20px;
+            margin-bottom: 12px;
+            &:last-child {
+               // margin-bottom: 0;
+            }
+         }
+      }
+   }
+   .footer {
+      &__content {
+         font-size: 11px;
+      }
+      &::before {
+         position: unset;
+      }
+   }
 }
-
 @media (max-width: 470px) {
    .promo__info {
       left: 25px;
@@ -1152,6 +1422,11 @@
          margin-bottom: 6px;
       }
    }
+   .ecological {
+      &__bg {
+         min-height: 880px;
+      }
+   }
    .variation {
       &__name {
          width: 100px;
@@ -1175,6 +1450,20 @@
                margin-bottom: 10px;
             }
          }
+      }
+   }
+   .contacts {
+      padding: 60px 20px 30px;
+      .socials {
+         padding: 0;
+         &__desc {
+            font-size: 13px;
+         }
+      }
+   }
+   .footer {
+      &__content {
+         font-size: 9px;
       }
    }
 }
