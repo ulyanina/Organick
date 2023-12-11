@@ -21,33 +21,35 @@
       <header class="header">
          <div class="container">
             <div class="header__row">
-               <div class="menu">
-                  <a href="#" class="logo">
-
-                     <img src="icons/logo.svg" alt="logo">
-                  </a>
-                  <nav class="menu__row">
-                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                     </ul>
-                  </nav>
+               <a href="#" class="logo">
+                  <img src="icons/logo.svg" alt="logo">
+               </a>
+               <nav>
+                  <ul class="menu">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#about">About Us</a></li>
+                     <li><a href="#catalog">Shop</a></li>
+                     <li><a href="#">Pages</a></li>
+                     <li><a href="#contacts">Contact Us</a></li>
+                  </ul>
+               </nav>
+               <div class="hamburger ">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                </div>
                <div class="cart">
                   <div class="cart__row">
                      <div class="cart__itself">
                         <img src="icons/shop.svg" alt="cart-icon">
                      </div>
-                     <div class="cart__num">Cart 0</div>
+                     <div class="cart__num"><span>Cart</span><span>0</span></div>
                   </div>
                </div>
             </div>
          </div>
       </header>
-      <section class="promo">
+      <section id="#up" class="promo">
          <div class="container">
             <div class="promo__info">
                <h2 class="promo__title title">Made with nature</h2>
@@ -79,7 +81,7 @@
             </div>
          </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
          <div class="container">
             <div class="about__row">
                <img class="about__img" src="img/about/about.png" alt="about">
@@ -119,7 +121,7 @@
             </div>
          </div>
       </section>
-      <section class="catalog">
+      <section id="catalog" class="catalog">
          <div class="container">
             <h2 class="catalog__title title">Organic</h2>
             <h3 class="catalog__subtitle subtitle">Our Products</h3>
@@ -460,7 +462,7 @@
             </div>
          </div>
       </section>
-      <section class="contacts">
+      <section id="contacts" class="contacts">
          <div class="container">
             <div class="contacts__row">
                <div class="contacts__section contact">
@@ -527,7 +529,12 @@
             </div>
          </div>
       </footer>
+      <a href="#" id="up" class="pageup">
+         <img src="icons/page-up.svg" alt="pageup">
+      </a>
    </div>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>

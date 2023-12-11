@@ -2,8 +2,9 @@
    &__row {
       padding: 40px 30px;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
+      position: relative;
       &__main {
       }
 
@@ -27,27 +28,30 @@
 .menu {
    display: flex;
    align-items: center;
-   &__row {
-      ul {
-         display: flex;
-         :last-child {
-            margin-right: 0;
-            margin-left: 20px;
-         }
-         li {
-            margin-right: 40px;
+   display: flex;
 
-            a {
-               color: $main-grey;
-            }
-            :hover {
-               color: #7eb693;
-            }
+   li {
+      margin-right: 40px;
+
+      a {
+         color: $main-grey;
+         font-size: 19px;
+         &:hover {
+            color: #7eb693;
          }
       }
+
+      &:last-child {
+         margin-right: 0;
+         margin-left: 20px;
+      }
    }
+
 }
 .cart {
+   width: 159px;
+   height: 70px;
+   margin-left: auto;
    &__row {
       display: flex;
       align-items: center;
@@ -64,5 +68,21 @@
       justify-content: center;
       align-items: center;
       margin-right: 10px;
+      img {
+         width: 26px;
+      }
    }
+   &__num {
+      display: flex;
+      font-size: 17px;
+      & span {
+         &:first-child {
+            display: inline-block;
+            margin-right: 7px;
+         }
+      }
+   }
+}
+.hamburger {
+   display: none;
 }
