@@ -1,6 +1,5 @@
 .newsletter {
    min-height: 320px;
-   // width: 100%;
    margin: 0 10px;
 
    .container {
@@ -27,6 +26,7 @@
       align-self: center;
       form {
          display: flex;
+         position: relative;
          input {
             width: 350px;
             height: 82px;
@@ -37,7 +37,16 @@
             font-size: 18px;
             line-height: 29px;
             padding: 0 30px;
-            // padding-left: 30px;
+         }
+         & .error {
+            border: 1px solid red;
+         }
+         #email-error {
+            border: none;
+            position: absolute;
+            bottom: -26px;
+            left: 5px;
+            color: red;
          }
       }
    }

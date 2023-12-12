@@ -27,6 +27,23 @@ $(window).scroll(function () {
 	}
 });
 
+function validateForms(form) {
+	$(form).validate({
+		rules: {
+			email: {
+				required: true,
+				email: true
+         },
+		},
+		messages: {
+			email: {
+				required: 'Пожалуйста, введите свой почтовый адрес',
+				email: 'Неправильно введен адрес почты'
+         },
+		}
+	});
+}
+validateForms('#form');
 
 // menuItem.forEach(item => {
 //    item.addEventListener('click', () => {

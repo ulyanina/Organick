@@ -1611,12 +1611,18 @@
          text-align: center;
       }
       &__form {
-         & form {
+         form {
             flex-direction: column;
             align-items: center;
-            & input {
+            input {
                margin-right: 0;
                margin-bottom: 10px;
+            }
+            #email-error {
+               bottom: 163px;
+               left: 0;
+               width: 230px;
+               text-align: center;
             }
          }
       }
