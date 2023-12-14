@@ -42,14 +42,6 @@
    }
    &__item {
       position: relative;
-
-      a {
-         // color: $main_grey;
-         // position: absolute;
-         // top: 250px;
-         // left: 35px;
-         // z-index: 2;
-      }
    }
 
    &__new {
@@ -59,7 +51,7 @@
       // max-width: 610px;
       max-width: 92%;
       min-height: 337px;
-      padding: 53px 42px 60px 50px;
+      padding: 53px 42px 50px 50px;
       color: $main_grey;
       position: absolute;
       top: 250px;
@@ -74,19 +66,23 @@
          margin-bottom: 34px;
       }
       .button {
+         display: block;
          height: 48px;
          border-radius: 0;
          background: transparent;
          border: none;
+         width: 130px;
          span {
             left: 0;
             top: 10px;
             font-size: 20px;
             line-height: 28px;
+            color: $main_grey;
          }
          img {
-            top: 12px;
+            top: 15px;
             left: 109px;
+            margin-right: 0;
             padding: 6px 6px 7px 5px;
          }
       }
@@ -95,6 +91,7 @@
    &__name {
       img {
          margin-right: 10px;
+         margin-bottom: 12px;
       }
       span {
          line-height: 23px;

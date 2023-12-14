@@ -5,6 +5,7 @@
    // max-width: 100vw;
    // position: relative;
    .container {
+      height: 100%;
       position: relative;
    }
    &__info {
@@ -25,7 +26,7 @@
    }
    &__button {
       color: $main_grey;
-      img{
+      img {
          padding: 11px 10px;
       }
    }

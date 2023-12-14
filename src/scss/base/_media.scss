@@ -222,6 +222,9 @@
       }
       &__new {
          top: 180px;
+         & .subtitle {
+            margin-bottom: 26px;
+         }
       }
    }
    .newsletter {
@@ -515,6 +518,9 @@
       &__new {
          padding: 35px;
          top: calc(60px + 120 * ((100vw - 320px) / (1440 - 768)));
+         & .subtitle {
+            margin-bottom: 20px;
+         }
       }
    }
    .newsletter {
@@ -1300,22 +1306,26 @@
    .ecological {
       &__bg {
          flex-direction: column;
-         min-height: 765px;
+         // min-height: 765px;
+         min-height: 709px;
          & img {
             width: 100%;
-            height: 280px;
+            // height: 30%;
          }
       }
       &__empty {
          width: 100%;
-         height: 300px;
+         // height: 60%;
       }
       &__content {
+         position: relative;
          left: 0;
-         top: -10%;
+         bottom: 30px;
          width: 100%;
+         height: 100%;
          border-radius: 30px 30px 0px 0px;
          max-height: unset;
+         padding-bottom: 0;
       }
    }
    .variation {
@@ -1564,36 +1574,40 @@
          min-height: 471px;
       }
       &__new {
-         padding: 14px 25px;
+         padding: 13px 23px;
          min-height: 200px;
          & .subtitle {
             font-size: 19px;
             line-height: 22px;
+            margin-bottom: 10px;
          }
          & .button {
             height: 29px;
             // border: 1px solid black;
             & span {
-               top: 2px;
+               top: 0;
                font-size: 16px;
             }
             & img {
                top: 6px;
+               left: 85px;
+               padding: 4px 4px 4px 4px;
             }
          }
       }
       &__name {
-         margin-bottom: 6px;
+         margin-bottom: 0;
       }
       &__content {
-         font-size: 16px;
-         line-height: 17px;
-         margin-bottom: 6px;
+         font-size: 15px;
+         line-height: 18px;
+         margin-bottom: 11px;
       }
    }
    .ecological {
       &__bg {
-         min-height: 880px;
+         // min-height: 880px;
+         min-height: 754px;
       }
    }
    .variation {

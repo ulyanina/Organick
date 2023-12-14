@@ -1,8 +1,7 @@
 'use strict'
 const hamburger = document.querySelector('.hamburger'),
    menu = document.querySelector('.menu'),
-   menuItem = document.querySelectorAll('.menu li a');
-   // closeBtn = document.querySelector('.menu-close');
+	menuItem = document.querySelectorAll('.menu li a');
 
 hamburger.addEventListener('click', () => {
    hamburger.classList.toggle('hamburger-active');
@@ -45,31 +44,3 @@ function validateForms(form) {
 }
 validateForms('#form');
 
-// menuItem.forEach(item => {
-//    item.addEventListener('click', () => {
-//        hamburger.classList.toggle('hamburger_active');
-//        menu.classList.toggle('menu_active');
-//        veil.classList.toggle('presentation-veil');
-//    })
-// })
-
-
-// hamburger.addEventListener('click', () => {
-//    menu.classList.toggle('menu-active');
-// });
-
-// closeBtn.addEventListener('click', () => {
-//    menu.classList.toggle('menu-active');
-// });
-
-
-// const humburger = document.querySelector('.humburger'),
-//    menu = document.querySelector('.menu'),
-//    closeBtn = document.querySelector('.menu__close');
-
-// humburger.addEventListener('click', () => {
-//    menu.classList.add('active');
-// });
-// closeBtn.addEventListener('click', () => {
-//    menu.classList.remove('active');
-// });
