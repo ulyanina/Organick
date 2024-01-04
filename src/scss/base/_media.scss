@@ -90,9 +90,14 @@
       // }
    }
    .about {
+      min-height: 910px;
+      padding: 70px 30px 100px;
       &__img {
          width: 40%;
       }
+   }
+   .catalog {
+      padding: 70px 10px;
    }
    .news {
       &__new {
@@ -182,9 +187,9 @@
    .promo {
       // background: url('../img/promo/promo-bg-smaller.webp') center center/cover no-repeat;
    }
-   .about {
-      padding: 110px 30px 110px;
-   }
+   // .about {
+   //    padding: 110px 30px 110px;
+   // }
    .catalog {
       &__boxes {
          grid-template-rows: repeat(2, minmax(150px, 530px));
@@ -371,7 +376,7 @@
       }
    }
    .catalog {
-      padding: 100px 10px 80px;
+      // padding: 100px 10px 80px;
       &__boxes {
          gap: 15px;
          // grid-template-rows: repeat(2,minmax(150px,520px));
