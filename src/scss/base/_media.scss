@@ -356,6 +356,9 @@
       }
    }
    .about {
+      &__row {
+         // flex-shrink: 0;
+      }
       &__title {
          font-size: calc(19px + 17 * ((100vw - 320px) / (1380 - 320)));
       }
@@ -1385,6 +1388,7 @@
       &__row {
          grid-template-columns: minmax(100px, 354px) minmax(100px, 354px);
          grid-template-rows: minmax(100px, 163px) minmax(100px, 213px);
+         row-gap: 10px;
       }
       &__subheader {
          font-size: 18px;
@@ -1679,6 +1683,8 @@
    .pageup {
       width: 17px;
       height: 17px;
+      bottom: 20px;
+      right: 20px;
    }
 }
 @media (max-width: 400px) {
