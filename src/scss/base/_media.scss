@@ -131,7 +131,7 @@
          // width: 84%;
       }
       &__price-section {
-         line-height: 24px;
+         line-height: 22px;
       }
       &__prices {
          flex-direction: column;
@@ -142,6 +142,9 @@
          // .new-price {
          //    align-self: center;
          // }
+      }
+      & .rating {
+         align-self: flex-end;
       }
    }
    .box {
@@ -1239,6 +1242,7 @@
          // }
       }
       .rating {
+         align-self: center;
          &__stars {
             width: 93%;
             height: 14px;
